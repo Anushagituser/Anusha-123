@@ -19,12 +19,12 @@ stages{
          stage ("deploy-dev"){
         steps{
              sshagent(['tomcat-new']){
-             sh "
+   
          
             
             ssh ec2-user@172.31.15.166 /home/ec2-user/apache-tomcat-9.0.58/bin/startup.sh
             
-            "
+        
           }
        }
     }
